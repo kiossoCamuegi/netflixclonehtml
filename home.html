@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="css/fontawesome/icon/main.min.css">
+    <link rel="stylesheet" href="./owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <video src="./videos/previews/peaky_blinders.mp4"  muted  id="thrailer-video" poster="./images/thumbnails/peaky_blinders.jpg" ></video>
+     <div class="header-over">
+        <div class="navbar">
+            <div class="item">
+                <a href="home.html">
+                    <div class="logo">
+                        <img src="./images/logotipo.png" alt="Netflix">
+                    </div>
+                </a>
+                <ul class="links">
+                     <li class="active"><a href="home.html">Home</a></li>
+                     <li><a href="tvshows.html">TV Shows</a></li>
+                     <li><a href="movies.html">Movies</a></li>
+                     <li><a href="latest.html">Latest</a></li>
+                     <li><a href="mylist.html">My List</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <a href="search.html" class="fa fa-search toggle-search-form"></a>
+                <ul>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#" class="fa fa-gift"></a></li>
+                    <li class="notifications">
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                            <div class="count">10</div>
+                        </a>
+                    </li>
+                    <li class="profile-dropdown">
+                        <a href="#">
+                            <img src="./images/profiles/avatar1.png" alt="#">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-profile">
+                            <ol class="profiles">
+                               <li>
+                                <a href="#">
+                                    <img src="./images/profiles/avatar2.png" alt="name here">
+                                    <span>Ján</span>
+                                </a>
+                               </li>
+                               <li>
+                                <a href="#">
+                                    <img src="./images/profiles/avatar3.jpg" alt="name here">
+                                    <span>Mosly</span>
+                                </a>
+                               </li>
+                            </ol>
+                            <div class="dropdown-menu">
+                                <span><a href="manage-profile.html">Manage Profiles</a></span>
+                            </div>
+                            <div class="bar"></div>
+                             <ol>
+                                 <li><a href="account.html">Account</a></li>
+                                <li><a href="helpcenter.html">Help center</a></li>
+                                <li><a href="#">Sign out of Netflix</a></li>
+                             </ol> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-video-details" >
+               <div class="image">
+                     <img src="./images/thumbnails/png/peaky_blinders.png" alt="money heist">
+               </div>
+               <div class="block-info">
+                     <p>One man 10.000.000 serial killers.No limits. now that the world thinks he's dead
+                        ,they  can start fixing it -- one bad guy at atime.
+                     </p>
+                     <div class="float-buttons">
+                          <button class="btn-volume">
+                                <i class="fa fa-volume-down"></i>
+                          </button>
+                          <div class="type">16+</div>
+                     </div>
+                     <div class="buttons">
+                          <a href="watch.html">
+                            <button class="btn-play">
+                                <i class="fa fa-play"></i>
+                                <span>Play</span>
+                           </button>
+                          </a>
+                          <button>
+                               <i class="fa fa-plus"></i>
+                               <span>My List</span>
+                          </button>
+                          <button>
+                                 <i class="fa fa-info-circle"></i>
+                                 <span>More Info</span>
+                          </button>
+                     </div>
+               </div>
+        </div>
+     </div>
+     <div class="shadow"></div>
+</header>
+ <section class="top-content-row content-row">
+    <div class="title">
+        <h1>Popular on Netflix</h1>
+    </div>
+    <section class="item-details">
+        <div class="row-item-over"> 
+            <video autoplay muted src="./videos/previews/3.mp4" poster="./images/thumbnails/after.jpg" muted></video>
+             <div class="over-box">
+                 <div class="flex">
+                     <div class="play-button fa fa-play"></div>
+                 <div class="title">The after party</div>
+                 <div class="flex-box">
+                     <div class="match">94% Match</div>
+                     <div class="age">
+                         <span>14+</span>
+                     </div>
+                     <div class="season">5 seasons</div>
+                 </div>
+                 <div class="genres">
+                     <span>Goofy</span> 
+                     <span>Sitcon</span>
+                     <span>Comedy</span>
+                 </div> 
+                 <div class="float-buttons">
+                     <button class="volume-content fa fa-volume-down"></button>
+                     <button class="like-content fa fa-thumbs-o-up" netflix-item-code=""></button>
+                     <button class="dislike-content fa fa-thumbs-o-down" netflix-item-code=""></button>
+                     <button class="add-to-watchlist fa fa-plus" netflix-item-code=""></button>
+                   </div>
+                 </div> 
+                 <div class="view">
+                     <a href="#">
+                         <img src="./images/icons/down.png" alt="">
+                     </a>
+                 </div>
+             </div>
+         </div>
+    </section>
+    <div class="row  row-category owl-carousel">
+             <article class="row-item">
+                    <a href="#">
+                        <img src="./images/thumbnails/after.jpg" alt="afetr">
+                    </a>
+                     <div class="row-over"></div>
+                </article>
+                <article class="row-item">
+                    <a href="#">
+                    <img src="./images/thumbnails/money_heist_wall.webp" alt="afetr">
+                    </a> 
+                    <div class="row-over"></div>
+            </article>
+            <article class="row-item">
+                <a href="#">
+                <img src="./images/thumbnails/go.webp" alt="afetr">
+                </a>
+                <div class="row-over"></div>
+           </article>
+            <article class="row-item">
+                <a href="#">
+                <img src="./images/thumbnails/lucifer.jpg" alt="afetr">
+                </a>
+                <div class="row-over"></div>
+            </article>
+            <article class="row-item">
+                <a href="#">
+                <img src="./images/thumbnails/narcos.webp" alt="afetr">
+                </a>
+                <div class="row-over"></div>
+          </article>
+          <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/Suits.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+          </article>
+          <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/orange_black.png" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+    </div>
+ </section>    
+ <section class="trending content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>   
+<section class="trend-box">
+    <img src="./images/thumbnails/bright_2.jpg" class="wall" alt="stranger things image 2">
+    <div class="trend-box-over">
+          <div class="trend-box-details">
+              <div class="video-box">
+                    <video  muted src="./videos/previews/Bright  Official Trailer.mp4"  poster="./images/thumbnails/bright.jpg"></video>
+                    <div class="video-box-controls"></div>
+              </div>
+              <div class="block-info">
+                    <div class="image">
+                        <img src="./images/thumbnails/png/bright.png" alt="bright">
+                    </div> 
+                        <p>One man 10.000.000 serial killers.No limits. now that the world thinks he's dead
+                           ,they  can start fixing it -- one bad guy at atime.
+                        </p> 
+                        <div class="buttons">
+                             <a href="watch.html">
+                                <button class="btn-play">
+                                    <i class="fa fa-play"></i>
+                                    <span>Play</span>
+                               </button>
+                             </a>
+                             <button>
+                                  <i class="fa fa-plus"></i>
+                                  <span>My List</span>
+                             </button>
+                             <button>
+                                    <i class="fa fa-info-circle"></i>
+                                    <span>More Info</span>
+                             </button>
+                        </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</section>
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="netflix-originals" style="margin:80px 0px ;">
+    <div class="title"><h1>Netflix originals</h1></div>
+    <div class="row  row-category owl-carousel">
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/13_reasons.jpg" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/annihilation.webp" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/crouching-tiger-hidden-dragon-sword-of-destiny.webp" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/miroh.jpg" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/stranger_things.jpg" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/psycho.jpg" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/ray.jfif" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+        <div class="net-row-item">
+            <a href="#"><img src="./images/thumbnails/netflix roiginals/room_999.jpg" alt=""></a>
+            <div class="row-over"></div>
+        </div>
+    </div>
+</section>
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<section class="content-row">
+    <div class="title">
+        <h1>Trending  now</h1>
+    </div>
+ <div class="row  row-category owl-carousel">
+      <article class="row-item">
+           <a href="#">
+               <img src="./images/thumbnails/2012.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+       <article class="row-item">
+           <a href="#">
+           <img src="./images/thumbnails/bnn.jpg" alt="afetr">
+           </a>
+           <div class="row-over"></div>
+       </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/boku.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/got.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/hs.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/ha.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article>
+        <article class="row-item">
+            <a href="#">
+            <img src="./images/thumbnails/jb.jpg" alt="afetr">
+            </a>
+            <div class="row-over"></div>
+        </article> 
+     </div>
+</section>  
+<script src="./javascript/jquery.min.js"></script>
+<script src="./owl.carousel/owl.carousel.min.js"></script>
+<script src="./javascript/Functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="css/fontawesome/icon/main.min.css">
+    <link rel="stylesheet" href="./owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+</head>
+<body> 
+<div class="watch">
+     <div class="watch-video-container">
+         <div class="loader hide">
+             <div class="loader-spinner">
+                <div></div>
+             </div>
+        </div>
+        <img class="thumbnail-img">
+        <video autoplay  src="./videos/fullvideos/1.mp4"></video>
+        <div class="watch-video-controls">
+           <section class="top-controls">
+               <button class="back-button">
+                    <img src="./images/icons/back_arrow.png">
+                    <span>Back to Browse</span>
+               </button>
+           </section>
+           <section class="bottom-controls">
+                 <aside class="watch-progress-slider">
+                    <div class="timeline-container">
+                        <div class="timeline">
+                              <div class="preview-img">
+                                <img >
+                                <div class="preview-time">10:00</div>
+                              </div>
+                            <div class="thumb-indicator"></div>
+                            <div class="continue-bar"></div>
+                        </div>
+                    </div>
+                    <div class="total-time">2:08:40</div>
+                 </aside>
+                 <aside class="watch-controls">
+                       <div class="box">
+                            <button class="play-video-btn"><img src="./images/icons/pause.png" alt="play-pause"></button>
+                            <button class="skip-backward-btn"><img src="./images/icons/skip_backward.png" alt="skip 10 seconds backward"></button>
+                            <button class="skip-foward-btn"><img src="./images/icons/skip_foward.png" alt="skip 10 seconds foward"></button>
+                            <div class="toggle-volume">
+                                <button class="volume-btn">
+                                    <img src="./images/icons/volume_high.png" alt="">
+                                </button>
+                                <input  type="range" min="0" max="1" step="any" value="1">
+                            </div>
+                            <div class="description">The Pure trueth <span class="season">S1:E1</span><span class="episode">Angel Attack</span></div>
+                        </div>
+                     <div class="box">
+                        <button class="help-btn"><img src="./images/icons/help.png" alt="Help"></button>
+                        <div class="change-controls">
+                            <button class="previues-btn"><img src="./images/icons/prev.png" alt="previus content"></button>
+                            <button class="next-btn"><img src="./images/icons/next.png" alt="Next content"></button>
+                        </div>
+                        <button class="pictute-in-picture-btn"><img src="./images/icons/picture_in_picture.png" alt="pop out player"></button>
+                        <button class="playlist-btn"><img src="./images/icons/playlist.png" alt="playlist"></button>
+                        <button class="subtitles-btn"><img src="./images/icons/subtitles.png" alt="video subtitles"></button>
+                        <button class="screen-mode-btn"><img src="./images/icons/normal_screen.png" alt="screen-mode"></button>
+                      </div>
+                 </aside>
+           </section>
+        </div>
+     </div>
+</div>    
+<script src="./javascript/jquery.min.js"></script>
+<script src="./owl.carousel/owl.carousel.min.js"></script>
+<script src="./javascript/Functions.js"></script>
+</body>
+</html>

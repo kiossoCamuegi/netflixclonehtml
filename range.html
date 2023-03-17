@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(rgb(255, 221, 237), rgba(243, 145, 195, 1));
+  }
+  
+  input,
+  output {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+  }
+  
+  output {
+    background: #ff4500;
+    padding: 5px 16px;
+    border-radius: 3px;
+    color: #fff;
+  }
+  
+  input[type="number"] {
+    width: 40px;
+    padding: 4px 5px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+  }
+  
+  /* input[type="range"]:focus,
+  input[type="number"]:focus {
+    box-shadow: 0 0 3px 1px #4b81dd;
+    outline: none;
+  } */
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(#ff4500, #ff4500);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  /* Input Thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #ff0200;
+  }
+  
+  input[type="range"]::-moz-range-thumb:hover {
+    background: #ff0200;
+  }
+  
+  input[type="range"]::-ms-thumb:hover {
+    background: #ff0200;
+  }
+  
+  /* Input Track */
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* html */
+
+
+
+  <div>
+    <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value"/>
+    <output id="rangevalue">70</output>
+  
+    <br>
+    <br>
+    <br>
+    
+    <input type="range" value="70" min="0" max="100" id="range" oninput="rangenumber.value=value"/>
+    <input type="number" id="rangenumber" min="0" max="100" value="70" oninput="range.value=value">
+  
+  </div>
+  
+
+
+  /**js*/
+
+  const rangeInputs = document.querySelectorAll('input[type="range"]')
+const numberInput = document.querySelector('input[type="number"]')
+
+function handleInputChange(e) {
+  let target = e.target
+  if (e.target.type !== 'range') {
+    target = document.getElementById('range')
+  } 
+  const min = target.min
+  const max = target.max
+  const val = target.value
+  
+  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+}
+
+rangeInputs.forEach(input => {
+  input.addEventListener('input', handleInputChange)
+})
+
+numberInput.addEventListener('input', handleInputChange)
+
+
+<script>
+    var video   = document.querySelector(‘YOUR_VIDEO_SELECTOR’)
+    tracks  = video.textTracks[0],
+    tracks.mode = 'hidden', // must occur before cues is retrieved
+    cues    = tracks.cues;
+
+  var replaceText = function(text) {
+        $('WHERE_TEXT_GETS_INSERTED').html(text);
+      },
+
+      showText = function() {
+        $('WHERE_TEXT_GETS_INSERTED').show();
+      },
+
+      hideText = function() {
+        $('WHERE_TEXT_GETS_INSERTED').hide();
+      },
+
+      cueEnter = function() {
+        replaceText(this.text);
+        showText();
+      },
+
+      cueExit = function() {
+        hideText();
+      },
+
+      videoLoaded = function(e) {
+        for (var i in cues) {
+          var cue = cues[i];
+          cue.onenter = cueEnter;
+          cue.onexit = cueExit;
+        }
+      },
+
+      playVideo = function(e) {
+        video.play();
+      };
+
+
+  video.addEventListener('loadedmetadata', videoLoaded);
+  video.addEventLister('load', playVideo);
+  video.load();
+</script>
+exmple 2
+<style>
+    .chrome {
+  video::cue {
+    font-size: 24px;
+    opacity: 1;
+    background-color: black;
+    -webkit-transform: translateY(10%) !important;
+    transform: translateY(10%) !important;
+  }
+
+  video::-webkit-media-text-track-display {
+    overflow: visible !important;
+    -webkit-box-sizing: border-box;
+    background: black;
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+
+  video::-webkit-media-text-track-container {
+    overflow: visible !important;
+    -webkit-transform: translateY(40%) !important;
+    transform: translateY(40%) !important;
+    position: relative;
+  }
+}
+
+.safari {
+  video::cue {
+    font-size: 24px;
+    opacity: 1;
+    background-color: black;
+  }
+
+  video::-webkit-media-text-track-display-backdrop {
+    background-color: black !important;
+    overflow: visible !important;
+  }
+
+  video::-webkit-media-text-track-display {
+    overflow: visible !important;
+    -webkit-box-sizing: border-box;
+  }
+
+  video::-webkit-media-text-track-container {
+    overflow: visible !important;
+    -webkit-transform: translateY(20%) !important;
+    transform: translateY(20%) !important;
+    position: absolute;
+  }
+}
+</style>
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+    var timer;
+    $(document).on("mousemove touchmove", function () {
+        if (timer) {
+            clearTimeout(timer);
+            timer = 0;
+        }
+        $('div').fadeIn(1500);
+        timer = setTimeout(function () {
+            $('div').fadeOut(3000)
+        }, 3000)
+    });
+});
+</script>
